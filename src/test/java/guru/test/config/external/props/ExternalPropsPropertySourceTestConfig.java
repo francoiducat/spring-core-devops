@@ -16,16 +16,16 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 @PropertySource("classpath:testing.properties")
 public class ExternalPropsPropertySourceTestConfig {
 
-    @Value("${guru.jms.server}")
+    @Value(value = "${guru.jms.server}")
     String jmsServer;
 
-    @Value("${guru.jms.port}")
+    @Value(value = "${guru.jms.port}")
     Integer jmsPort;
 
-    @Value("${guru.jms.user}")
+    @Value(value = "${guru.jms.user}")
     String jmsUser;
 
-    @Value("${guru.jms.password}")
+    @Value(value = "${guru.jms.password}")
     String jmsPassword;
 
 
